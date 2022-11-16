@@ -1,3 +1,4 @@
+const Employee = require('../lib/Employee'); 
 /*
 
 name

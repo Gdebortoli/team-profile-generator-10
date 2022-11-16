@@ -58,3 +58,14 @@ GIVEN a command-line application that accepts user input
 
 Click here for the link to my [Github Respository](https://github.com/Gdebortoli/team-profile-generator-10.git) 
 
+
+
+<!-- 
+Tips
+
+├── dist/                  // rendered output (HTML) and CSS style sheet      
+├── lib/                   // classes
+├── src/                   // template helper code 
+├── .gitignore             // indicates which folders and files Git should ignore
+├── index.js               // runs the application
+-->
