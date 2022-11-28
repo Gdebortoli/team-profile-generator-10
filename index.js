@@ -12,8 +12,7 @@ const generatePage = require('./src/trTemplate')
 const prompts = () => {
     console.log(`
 =======================================================================
-Please answer the following questions about yourself and your team members 
-to create a roster for your Employees. 
+Please answer the following questions ...
 =======================================================================
 `);
 return inquirer.prompt([
@@ -62,7 +61,7 @@ return inquirer.prompt([
 // Function to write html file
     // .then(answers => {
     //     console.log(answers);
-    //     fs.writeFileSync("./dist/teamRoster.html", teamRosterTemplate(answers))
+    //     fs.writeFileSync("./dist/teamRoster.html", trTemplate(answers))
     //     }
     //)
 };
