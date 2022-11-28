@@ -1,18 +1,8 @@
 const Employee = require('../lib/Employee'); 
-/*
 
-name
+//TEST - Create Employee
+test('creates an employee in the roster', () => {
+    const employee = new Employee(''); 
 
-id
-
-email
-
-getName()
-
-getId()
-
-getEmail()
-
-getRole() // Returns 'Employee'
-
-*/
+    expect(typeof(employee)).toBe('object');
+});
