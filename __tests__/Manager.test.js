@@ -1,22 +1,8 @@
 const Manager = require('../lib/Manager'); 
-/*
 
-name
+// TEST- Create Manager
+test('creates a manager object in the roster', () => {
+    const manager = new Manager('');
 
-id
-
-email
-
-getName()
-
-getId()
-
-getEmail()
-
-getRole() // returns employee
-
-officeNumber
-
-getRole() // Overridden to return 'Manager'
-
-*/
+    expect(typeof(manager)).toBe('object');
+})

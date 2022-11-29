@@ -6,26 +6,3 @@ test('creates an intern object in the roster', () => {
 
     expect(typeof(intern)).toBe('object');
 });
-/*
-
-name
-
-id
-
-email
-
-getName()
-
-getId()
-
-getEmail()
-
-getRole() // Returns 'Employee'
-
-school
-
-getSchool()
-
-getRole() // Overridden to return 'Intern'
-
-*/
