@@ -1,3 +1,4 @@
+
 function trTemplate(data) {
     return `
     <!DOCTYPE html>
@@ -17,3 +18,5 @@ function trTemplate(data) {
     </html>
     `
 }
+
+module.exports = trTemplate; 
