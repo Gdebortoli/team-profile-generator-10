@@ -1,4 +1,11 @@
 const Engineer = require('../lib/Engineer'); 
+
+// TEST - GitHub Username
+test('adds engineer object in the roster', () => {
+    const engineer = new Engineer('');
+    
+    expect(typeof(engineer)).toBe('object');
+});
 /*
 
 name
