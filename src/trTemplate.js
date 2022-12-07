@@ -1,5 +1,5 @@
 
-function trTemplate(data) {
+function teamPrompts(data) {
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -12,6 +12,18 @@ function trTemplate(data) {
     <body>
         <header>Our Team</header>
         
+        <section>
+        
+        </section>
+
+        <section>
+        
+        </section>
+
+        <section>
+        
+        </section>
+
 
         
     </body>
@@ -19,4 +31,4 @@ function trTemplate(data) {
     `
 }
 
-module.exports = trTemplate; 
+module.exports = teamPrompts; 
