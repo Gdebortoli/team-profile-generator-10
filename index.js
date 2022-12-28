@@ -1,13 +1,11 @@
 const fs = require("fs"); 
 const inquirer = require("inquirer"); 
 // Requiring information from Lib pages 
-const Employee = require('./lib/Employee');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 const trTemplate = require("./src/trTemplate");
 
-const generatePage = require('./src/trTemplate')
 
 const teamRoster = [];
 
@@ -177,14 +175,20 @@ const addIntern = () => {
             console.log(teamRoster);
             addTeamMember();
     });
+}
 // Create the page function 
-const createPage = () = {
-        fs.writeFileSync(trHTML, trTe );
-    }
+const createRoster = (data) = {
+    fs.writeFile(createRoster, trTemplate(teamRoster), 'utf-8');
+    console.log('Roster Page Complete.') 
 }
 
+// const createPage = () = {
+//         fs.writeFileSync(generatePage, trTemplate(teamRoster), 'utf-8');
+//         console.log('Roster Page Complete.');
+    // 
 
-teamPrompts();
+teamPrompts()
+    // .then(teamRoster )
     
 
 
