@@ -1,19 +1,67 @@
-function teamCards = data => {
+// Team Roster Card Styling 
+const teamCards = team => {
+// Manager Card Styling
     const managerCard = manager =>{
         return `
-        <div class="card border-secondary mb-3" style="max-width: 18rem;">
-            <div class="card-header fs-3 fw-bold">Header 0.5</div>
-                <div class="card-body my-3">
-                    <h5 class="card-title">info card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+            <div class="card text-bg-success mb-3" style="max-width: 20rem;">
+                <div class="card-header fs-2 fw-bold">${manager.getRole()}</div>
+                    <div class="card-body my-2">
+                        <h3 class="card-title">${manager.getName()}</h3>
+                            <p class="card-text fs-5">
+                                Manager ID: ${manager.getId()}
+                                <br>
+                                Email: ${manager.getEmail()}
+                                <br>
+                                Office Number: ${manager.getOfficeNumber()}
+                            </p>
+                    </div>
             </div>
-        </div>
         `
     }
- 
+// Engineer Card Styling 
+    const engineerCard = data => {
+        return `
+            <div class="card text-bg-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header fs-2 fw-bold">${engineer.getRole()}</div>
+                    <div class="card-body my-2">
+                        <h3 class="card-title">${engineer.getName()}</h3>
+                            <p class="card-text fs-5">
+                                Engineer ID: ${engineer.getId()}
+                                <br>
+                                Email: ${engineer.getEmail()}
+                                <br>
+                                GitHub: ${engineer.getGithub()}
+                            </p>
+                    </div>
+            </div>
+        `
+    };
+// Intern Card Styling
+    const internCard = data => {
+        return `
+            <div class="card text-bg-warning text-light mb-3" style="max-width: 20rem;">
+                <div class="card-header fs-2 fw-bold">${intern.getRole()}</div>
+                    <div class="card-body my-2">
+                        <h3 class="card-title">${intern.getName()}</h3>
+                            <p class="card-text fs-5">
+                                Intern ID: ${intern.getId()}
+                                <br>
+                                Email: ${intern.getEmail()}
+                                <br>
+                                School Attended: ${intern.getSchoolName()}
+                            </p>
+                    </div>
+            </div>
+        `
+    }
+// Functions to push Cards into HTML Page once they are created
 
-module.exports = (teamPrompts) => {
+
+
+};
+
+
+module.exports = team => {
   return `
   <!DOCTYPE html>
   <html lang="en">
@@ -37,7 +85,7 @@ module.exports = (teamPrompts) => {
       </div>
       <section class="container">
           <div class="my-2">
-              <div class="mt-5 row gap-3">
+              <div class="mt-5 row justify-content-center gap-3">
                   ${teamCards(data)}
               </div>
           </section>
@@ -48,5 +96,5 @@ module.exports = (teamPrompts) => {
   </body>
   
   </html>
-    `
+    `;
 };
