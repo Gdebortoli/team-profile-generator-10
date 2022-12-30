@@ -1,10 +1,15 @@
+// Requiring dependencies for functionality in the code 
 const fs = require("fs");
 const inquirer = require("inquirer");
+const path = require("path");
 // Requiring information from Lib pages 
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 const trTemplate = require("./src/trTemplate");
+// Requiring path so we can reroute it to the correct folder location instead of the root
+const distFile = path.join(__dirname, "dist");
+const employeeRoster = path.join(distFile, "index.html");
 
 
 const teamRoster = [];
@@ -83,7 +88,7 @@ const addTeamMember = () => {
                 =========================================================================
                           Congratulations! You have finished your Team Roster.
                 =========================================================================
-                `);
+                `)
           createRoster();
       }
     })
@@ -178,7 +183,7 @@ const addIntern = () => {
 }
 // Create the page function 
 const createRoster = () => {
-  fs.writeFileSync('index.html', trTemplate(teamRoster), 'utf-8');
+  fs.writeFileSync(employeeRoster, trTemplate(teamRoster), 'utf-8');
   console.log('Roster Page Completed :) This is your team!');
 }
 

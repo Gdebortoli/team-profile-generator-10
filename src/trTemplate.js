@@ -19,7 +19,7 @@ const teamCards = team => {
         `
     }
 // Engineer Card Styling 
-    const engineerCard = data => {
+    const engineerCard = engineer => {
         return `
             <div class="card text-bg-primary mb-3" style="max-width: 20rem;">
                 <div class="card-header fs-2 fw-bold">${engineer.getRole()}</div>
@@ -35,9 +35,9 @@ const teamCards = team => {
                     </div>
             </div>
         `
-    };
+    }
 // Intern Card Styling
-    const internCard = data => {
+    const internCard = intern => {
         return `
             <div class="card text-bg-warning text-light mb-3" style="max-width: 20rem;">
                 <div class="card-header fs-2 fw-bold">${intern.getRole()}</div>
@@ -48,17 +48,30 @@ const teamCards = team => {
                                 <br>
                                 Email: ${intern.getEmail()}
                                 <br>
-                                School Attended: ${intern.getSchoolName()}
+                                School Attended: ${intern.getSchool()}
                             </p>
                     </div>
             </div>
         `
     }
 // Functions to push Cards into HTML Page once they are created
+const teamRostHTML = [];
 
-
-
+    teamRostHTML.push(team
+        .filter(employee => employee.getRole() === 'Manager')
+        .map(manager => managerCard(manager))
+        .join(''));
+    teamRostHTML.push(team
+        .filter(employee => employee.getRole() === 'Engineer')
+        .map(engineer => engineerCard(engineer))
+        .join(''));
+    teamRostHTML.push(team
+        .filter(employee => employee.getRole() === 'Intern')
+        .map(intern => internCard(intern))
+        .join(''));
+    return teamRostHTML.join('')
 };
+
 
 
 module.exports = team => {
@@ -86,15 +99,10 @@ module.exports = team => {
       <section class="container">
           <div class="my-2">
               <div class="mt-5 row justify-content-center gap-3">
-                  ${teamCards(data)}
+                  ${teamCards(team)}
               </div>
           </section>
-  
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-              integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-              crossorigin="anonymous"></script>
   </body>
-  
   </html>
     `;
 };
