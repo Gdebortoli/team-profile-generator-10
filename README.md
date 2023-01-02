@@ -14,7 +14,8 @@ SO THAT I have quick access to their emails and GitHub profiles
 - [Objectives](#objectives)
 - [Assets](#assets)
 - [Installation](#installation)
-- [Walkthrough Video](#walkthrough)
+- [Walkthrough Videos](#walkthrough-videos)
+- [Screenshots](#screenshots)
 - [Github Link](#github-link)
 
 ## Objectives
@@ -48,7 +49,7 @@ Create a command-line application that accepts user input with the following cri
 * run $ npm install in command line
 * run $ nodemon server to start the server 
 
-## Walkthrough Video
+## Walkthrough Videos
 
 * [Terminal Demo Video](https://watch.screencastify.com/v/HXbY8fAdCvWQRmusHE1O)
 * [Html Page Creation Walkthrough Video](https://watch.screencastify.com/v/C9ESOxQzentYj3YPraf5)
