@@ -52,6 +52,7 @@ Create a command-line application that accepts user input with the following cri
 ## Walkthrough Videos
 
 * [Terminal Demo Video](https://watch.screencastify.com/v/HXbY8fAdCvWQRmusHE1O)
+* [Jest Tests Video](https://watch.screencastify.com/v/BWWnC9g5K98uwZqJflbq)
 * [Html Page Creation Walkthrough Video](https://watch.screencastify.com/v/C9ESOxQzentYj3YPraf5)
 
 ## Screenshots
