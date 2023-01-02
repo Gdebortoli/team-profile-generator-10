@@ -10,7 +10,7 @@ const teamCards = team => {
                             <p class="card-text fs-5">
                                 Manager ID: ${manager.getId()}
                                 <br>
-                                Email: ${manager.getEmail()}
+                                Email: <a class="text-light" href="mailto:${manager.getEmail()}">${manager.getEmail()}</a>
                                 <br>
                                 Office Number: ${manager.getOfficeNumber()}
                             </p>
@@ -28,9 +28,9 @@ const teamCards = team => {
                             <p class="card-text fs-5">
                                 Engineer ID: ${engineer.getId()}
                                 <br>
-                                Email: ${engineer.getEmail()}
+                                Email:<a class="text-light" href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a>
                                 <br>
-                                GitHub: ${engineer.getGithub()}
+                                GitHub: <a class="text-light" href="https://github.com/${engineer.getGithub()}" target="_blank">${engineer.getGithub()}</a>
                             </p>
                     </div>
             </div>
@@ -46,7 +46,7 @@ const teamCards = team => {
                             <p class="card-text fs-5">
                                 Intern ID: ${intern.getId()}
                                 <br>
-                                Email: ${intern.getEmail()}
+                                Email: <a class="text-light" href="mailto:${intern.getEmail()}">${intern.getEmail()}</a>
                                 <br>
                                 School Attended: ${intern.getSchool()}
                             </p>
