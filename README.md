@@ -2,25 +2,24 @@
 
 ## Description
 
-Command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person
+Command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. 
 
 ### User Story
 
-* AS A manager
-I WANT to generate a webpage that displays my team's basic info
+AS A manager I WANT to generate a webpage that displays my team's basic info
 SO THAT I have quick access to their emails and GitHub profiles
 
 ## Table of Contents
 
-- [Acceptance Criteria](#acceptance-criteria)
+- [Objectives](#objectives)
 - [Assets](#assets)
 - [Installation](#installation)
 - [Walkthrough Video](#walkthrough)
 - [Github Link](#github-link)
 
-## Acceptance Criteria
+## Objectives
 
-GIVEN a command-line application that accepts user input
+Create a command-line application that accepts user input with the following criteria:
 
 * WHEN I am prompted for my team members and their information THEN an HTML file is generated that displays a nicely formatted team roster based on user input
 * WHEN I click on an email address in the HTML THEN my default email program opens and populates the TO field of the email with the address
@@ -51,11 +50,20 @@ GIVEN a command-line application that accepts user input
 
 ## Walkthrough Video
 
-* [Demo Video]()
+* [Terminal Demo Video](https://watch.screencastify.com/v/HXbY8fAdCvWQRmusHE1O)
+* [Html Page Creation Walkthrough Video](https://watch.screencastify.com/v/C9ESOxQzentYj3YPraf5)
 
 ## Screenshots
 
-![]()
+* HTML Employee Roster
+
+![Roster](./src/assets/screenshots/Prof.Gen.Sc.png)
+
+* Command Line Screenshots
+
+![Commandlinestart](./src/assets/screenshots/CmdLine.BeginningPrompts.png)
+
+![Commandlineend](./src/assets/screenshots/CmdLine.End.png)
 
 ## Github Link
 

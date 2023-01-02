@@ -73,7 +73,7 @@ const teamRostHTML = [];
 };
 
 
-
+// Basics of the main html template page including the team cards, bootstrap, and stylesheet links 
 module.exports = team => {
   return `
   <!DOCTYPE html>
